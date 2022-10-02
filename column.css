@@ -1,0 +1,87 @@
+/* 
+### Primary
+
+Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%)
+
+### Neutral
+
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+
+- Font size: 15px */
+
+
+body{
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+.wrapper {
+    background-color: hsl(0, 0%, 95%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.box{
+    height: 500px;
+    padding: 40px;
+}
+.div-sedan{
+    background-color:  hsl(31, 77%, 52%);
+}
+.div-suv{
+    background-color: hsl(184, 100%, 22%) ;
+}
+.div-luxury{
+    background-color: hsl(179, 100%, 13%) ;
+}
+
+.container h3 {
+    color: hsl(0, 0%, 95%);
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Big Shoulders Display';
+}
+
+.container p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 20px;
+}
+
+.btn {
+    margin-top: 100px;
+    border: 0;
+    border-radius: 40px;
+    padding: 20px 45px;
+    font-size: 18px;
+}
+
+.stbutton {
+    color: hsl(31, 77%, 52%);
+}
+
+.ndbutton {
+    color: hsl(184, 100%, 22%);
+}
+.rdbutton {
+    color: hsl(179, 100%, 13%);
+}
+
+.btn:hover {
+    background:none;
+    color: white;
+    border: 2px solid white;
+    border-radius: 40px;
+    cursor: pointer;
+}
